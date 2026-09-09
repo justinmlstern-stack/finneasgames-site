@@ -1,7 +1,5 @@
-# Finneas Games website v7
+# Finneas Games website v8
 
 This update:
-- leaves only one image on the Number Tails page
-- removes the repeated Number Tails banner/callout artwork
-- keeps the dog-icon header branding
-- keeps the finalized Number Tails logo
+- adds "© 2026 Justin Stern." to the footer alongside the existing Finneas Games copyright line
+- keeps all prior branding and Number Tails layout changes
