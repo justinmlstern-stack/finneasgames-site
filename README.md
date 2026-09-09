@@ -1,15 +1,6 @@
-# Finneas Games website v2
+# Finneas Games website v5
 
-Updated static site for https://finneasgames.com
-
-## Pages
-- `/` — Finneas Games home
-- `/numbertails/` — Number Tails page with artwork
-- `/numbertails/support/` — App Store Support URL
-- `/numbertails/privacy/` — Privacy Policy
-
-## Update notes
-This version adds Number Tails imagery to:
-- the Number Tails card on the homepage
-- the Number Tails page hero
-- a banner section and character callout on the Number Tails page
+This update:
+- replaces the small mint "F" header mark with the new Finneas Games dog logo
+- keeps the cleaner Number Tails layout
+- keeps the finalized Number Tails wordmark/logo on the /numbertails/ page
