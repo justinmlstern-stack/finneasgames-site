@@ -1,6 +1,7 @@
-# Finneas Games website v5
+# Finneas Games website v7
 
 This update:
-- replaces the small mint "F" header mark with the new Finneas Games dog logo
-- keeps the cleaner Number Tails layout
-- keeps the finalized Number Tails wordmark/logo on the /numbertails/ page
+- leaves only one image on the Number Tails page
+- removes the repeated Number Tails banner/callout artwork
+- keeps the dog-icon header branding
+- keeps the finalized Number Tails logo
