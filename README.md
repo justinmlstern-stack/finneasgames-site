@@ -1,5 +1,6 @@
-# Finneas Games website v8
+# Finneas Games website v9
 
 This update:
-- adds "© 2026 Justin Stern." to the footer alongside the existing Finneas Games copyright line
-- keeps all prior branding and Number Tails layout changes
+- replaces the header dog icon with the newly approved Finn badge image
+- keeps the existing Finneas Games text branding in the code
+- preserves the homepage, Number Tails page, support page, privacy page, and footer copyright lines
