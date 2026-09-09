@@ -1,3 +1,4 @@
+
 :root{
   --bg:#07120f;
   --bg2:#0b1a16;
@@ -22,6 +23,7 @@ body{
   min-height:100vh;
 }
 a{color:inherit}
+img{max-width:100%}
 .wrap{width:min(1080px,calc(100% - 40px));margin:auto}
 header{
   display:flex;align-items:center;justify-content:space-between;
@@ -39,6 +41,14 @@ nav{display:flex;gap:22px}
 nav a{color:var(--muted);text-decoration:none;font-size:14px}
 nav a:hover{color:var(--text)}
 .hero{padding:90px 0 70px;max-width:820px}
+.hero-split{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:28px;
+  align-items:center;
+  max-width:none;
+}
+.hero-copy{max-width:760px}
 .eyebrow{
   display:inline-block;color:var(--green2);font-size:13px;font-weight:800;
   letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px
@@ -84,6 +94,80 @@ footer{
 .badge{
   display:inline-block;padding:7px 11px;border:1px solid var(--line);
   border-radius:999px;color:var(--muted);font-size:13px
+}
+.hero-art{
+  position:relative;
+  border:1px solid var(--line);
+  border-radius:32px;
+  background:
+    radial-gradient(circle at 70% 30%, rgba(120,214,168,.25), transparent 18rem),
+    linear-gradient(160deg,#10261f,#0a1511);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  min-height:420px;
+}
+.hero-art img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  padding:22px;
+}
+.preview-band{
+  margin-top:10px;
+  border:1px solid var(--line);
+  border-radius:28px;
+  overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+  box-shadow:var(--shadow);
+}
+.preview-band img{display:block;width:100%;height:auto}
+.home-game-card{
+  position:relative;
+  overflow:hidden;
+}
+.home-game-card .home-art{
+  position:absolute;
+  right:-12px;
+  bottom:-16px;
+  width:45%;
+  max-width:285px;
+  opacity:.98;
+  filter:drop-shadow(0 12px 30px rgba(0,0,0,.35));
+}
+.home-game-card p,.home-game-card .actions,.home-game-card .kicker,.home-game-card .game-title{
+  position:relative; z-index:2; max-width:58%;
+}
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:22px;
+}
+.callout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  align-items:center;
+  margin-top:34px;
+}
+.art-panel{
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:linear-gradient(160deg,#10261f,#0a1511);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.art-panel img{display:block;width:100%;height:auto}
+@media(max-width:900px){
+  .hero-split,.callout{grid-template-columns:1fr}
+  .feature-grid{grid-template-columns:1fr}
+  .home-game-card .home-art{
+    position:relative; right:auto; bottom:auto; width:65%; max-width:330px; margin:18px auto 0; display:block;
+  }
+  .home-game-card p,.home-game-card .actions,.home-game-card .kicker,.home-game-card .game-title{
+    max-width:100%;
+  }
 }
 @media(max-width:760px){
   .grid{grid-template-columns:1fr}
