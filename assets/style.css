@@ -250,3 +250,18 @@ footer{
   margin:0 0 14px;
   filter:drop-shadow(0 8px 24px rgba(0,0,0,.28));
 }
+
+.coming-pill{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid var(--line);color:var(--green2);background:rgba(255,255,255,.035);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.game-grid,.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.game-tile{position:relative;overflow:hidden;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end}
+.game-tile.cube{background:radial-gradient(circle at 78% 18%,rgba(75,155,255,.20),transparent 15rem),linear-gradient(145deg,#0d1c2a,#08111a)}
+.game-tile.tiptap{background:radial-gradient(circle at 78% 20%,rgba(255,186,82,.18),transparent 14rem),linear-gradient(145deg,#24180d,#120d08)}
+.game-symbol{position:absolute;right:24px;top:22px;font-weight:900;line-height:1;opacity:.24;user-select:none}
+.cube-symbol{font-size:108px}.tilt-symbol{font-size:96px;transform:rotate(-10deg)}
+.game-page-hero{display:grid;grid-template-columns:1fr .85fr;gap:32px;align-items:center;padding:85px 0 60px}
+.game-mark-panel{min-height:390px;display:grid;place-items:center;border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow);overflow:hidden}
+.game-mark-panel.cube{background:radial-gradient(circle at center,rgba(48,124,255,.25),transparent 16rem),linear-gradient(145deg,#0b1b2b,#071019)}
+.game-mark-panel.tiptap{background:radial-gradient(circle at center,rgba(255,182,65,.22),transparent 16rem),linear-gradient(145deg,#24170b,#100b07)}
+.big-mark{font-size:clamp(76px,14vw,150px);font-weight:950;letter-spacing:-.08em;opacity:.95}
+.big-mark.cube{color:#a8d7ff}.big-mark.tiptap{color:#ffd28a;transform:rotate(-8deg)}
+@media(max-width:900px){.game-grid,.info-grid,.game-page-hero{grid-template-columns:1fr}.game-mark-panel{min-height:280px}}
